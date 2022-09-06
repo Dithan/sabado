@@ -1,0 +1,63 @@
+header {
+  background: linear-gradient(rgb(254, 241, 97), yellow);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-div h1 {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+}
+
+.header-div h1::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: red;
+  transition: 0.3s;
+}
+
+.header-div ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-div a {
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  transition: 0.2s;
+}
+
+.header-div a:hover {
+  color: red;
+}
+
+.header-div a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: red;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-div a:hover:after {
+  width: 80%;
+}
